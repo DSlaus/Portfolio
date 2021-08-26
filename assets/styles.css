@@ -1,0 +1,76 @@
+#sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+    padding-left: 10px;
+    background-color: #111;
+    color: lightgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar ul li{
+    list-style-type: none;
+    margin: 20px;
+}
+
+#sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: lightgray;
+}
+
+#sidebar a:hover {
+    color: white;
+}
+
+#content {
+    margin-left: 250px;
+    padding: 0px;
+}
+
+#missionStatement {
+    background-image: url("images/SkyCity.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    height: 500px;
+}
+
+#missionStatement h1 {
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 80px;
+}
+
+#span1 {
+    text-decoration: underline;
+    text-decoration-color: #f20000;
+}
+
+#span2 {
+    background-color: #f20000;
+    padding: 5px;
+}
+
+#articles h1 {
+    margin: 0px;
+    background-color: black;
+    color: lightgray;
+    font-weight: normal;
+    padding: 10px;
+}
+
+#articles {
+    background-image: url("images/Background.jpg");
+}
