@@ -12,6 +12,7 @@
     background-color: #111;
     color: lightgray;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 5px 0px 15px black;
 }
 
 #sidebar ul {
@@ -68,9 +69,34 @@
     background-color: black;
     color: lightgray;
     font-weight: normal;
-    padding: 10px;
+    padding: 20px;
+    font-size: 40px;
 }
 
 #articles {
-    background-image: url("images/Background.jpg");
+    /*background-image: url("images/Background.jpg");*/
+    background-color:gainsboro;
+}
+
+#articles p {
+    font-family: 'Garamond', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 20px 20px 30px;
+    line-height: 1.4;
+}
+
+#aboutContent h3 {
+    font-family: 'Garamond', 'Arial Narrow', Arial, sans-serif;
+    color: darkslategrey;
+    font-size: 35px;
+    margin: 0 0 0 30px;
+    font-weight: normal;
+}
+
+#v1 {
+    border-left: 20px solid darkslategrey;
+    height: 80px;
+    position: absolute;
+    margin-left: 0px;
 }
