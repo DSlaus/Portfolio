@@ -86,17 +86,44 @@
     line-height: 1.4;
 }
 
-#aboutContent h3 {
+#articles h3 {
     font-family: 'Garamond', 'Arial Narrow', Arial, sans-serif;
     color: darkslategrey;
     font-size: 35px;
-    margin: 0 0 0 30px;
+    margin: 20px 0px 0px 30px;
     font-weight: normal;
 }
 
 #v1 {
     border-left: 20px solid darkslategrey;
-    height: 80px;
+    height: 100px;
     position: absolute;
     margin-left: 0px;
+}
+
+#matc {
+    background-color: white;
+    width: 600px;
+    height: 200px;
+    margin: 30px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px darkgray;
+    border-top: 5px solid darkslategrey;
+    border-left: 5px solid darkslategrey;
+}
+
+#matc h3 {
+    font-size: 25px;
+}
+
+#matc p {
+    font-size: 20px;
+}
+
+#matc li {
+    font-size: 20px;
+}
+
+#email img{
+    margin: 30px;
 }
