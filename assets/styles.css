@@ -1,3 +1,10 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
 #sidebar {
     height: 100%;
     width: 250px;
@@ -37,15 +44,17 @@
 }
 
 #content {
+    margin: 0;
+    padding: 0;
     margin-left: 250px;
-    padding: 0px;
+    height: 100%;
 }
 
 #missionStatement {
-    background-image: url("images/SkyCity.jpg");
-    background-repeat: no-repeat;
-    background-size: 1400px;
-    height: 500px;
+    background: url("images/SkyCity.jpg") no-repeat;
+    background-size: 100%; 
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 #missionStatement h1 {
@@ -74,7 +83,6 @@
 }
 
 #articles {
-    /*background-image: url("images/Background.jpg");*/
     background-color:gainsboro;
 }
 
