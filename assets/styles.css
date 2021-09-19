@@ -43,7 +43,7 @@ html, body {
     color: white;
 }
 
-#content {
+main {
     margin: 0;
     padding: 0;
     margin-left: 250px;
@@ -52,15 +52,15 @@ html, body {
 
 #missionStatement {
     background: url("images/SkyCity.jpg") no-repeat;
-    background-size: 100%; 
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    background-size: 100%;  
+    height: 300px;
 }
 
 #missionStatement h1 {
     font-weight: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 80px;
+    margin: 0;
 }
 
 #span1 {
@@ -84,13 +84,14 @@ html, body {
 
 #articles {
     background-color:gainsboro;
+    padding-bottom: 1px;
 }
 
 #articles p {
     font-family: 'Garamond', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     font-weight: normal;
-    margin: 20px 20px 20px 30px;
+    margin: 20px 20px 20px 30px; 
     line-height: 1.4;
 }
 
@@ -132,6 +133,44 @@ html, body {
     font-size: 20px;
 }
 
-#email img{
-    margin: 30px;
+#contactContent section {
+    margin: 20px;
+    font-family: 'Garamond', 'Arial Narrow', Arial, sans-serif;
+}
+
+#contactContent section a {
+    text-decoration: none;
+}
+
+.iconText{
+    text-decoration: none;
+    color: darkslategray;
+    padding-bottom: 5px;
+    border-bottom: 3px solid gainsboro;
+    transition: border-color .25s linear;
+
+}
+
+.iconText:hover {
+    border-bottom: 3px solid darkslategray;
+}
+
+.icon, .iconText {
+    line-height: 50px;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+
+.icon {
+    vertical-align: middle;
+    font-size: 50px;
+    color: #493327;
+}
+
+#resumeContent section {
+    margin: 20px;
+}
+
+#resumeContent section a {
+    text-decoration: none;
 }

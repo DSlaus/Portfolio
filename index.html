@@ -1,74 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- 
-        -Fix gap at top of page above image and at bottom of page
-        -Temporarily fixed gap at top by using borders on #missionstatement, ask why it behaves like that, is there a better way?
-    -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles.css">
-    <title>Derek Slauson</title>
-</head>
-<body>
-    <div id="sidebar">
-        <h1>Derek Slauson</h1>
-        <h3>Full Stack Developer</h3>
-        <hr>
-        <ul>
-            <li><a href="#aboutContent">About</a></li>
-            <li><a href="#projectsContent">Projects</a></li>
-            <li><a href="#skillsContent">Skills</a></li>
-            <li><a href="#educationContent">Education</a></li>
-            <li><a href="#contactContent">Contact</a></li>
-            <li><a href="#resumeContent">Resume</a></li>
-        </ul>
-    </div>
-    <div id="content">
-        <div id="missionStatement">
-            <h1>I want to turn <span id="span1">ideas</span> into <span id="span2">reality.</span></h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/styles.css">
+        <link rel="stylesheet" 
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+            crossorigin="anonymous">
+        <title>Derek Slauson</title>
+    </head>
+    <body>
+        <div id="sidebar">
+            <h1>Derek Slauson</h1>
+            <h3>Full Stack Developer</h3>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="#aboutContent">About</a></li>
+                    <li><a href="#projectsContent">Projects</a></li>
+                    <li><a href="#skillsContent">Skills</a></li>
+                    <li><a href="#educationContent">Education</a></li>
+                    <li><a href="#contactContent">Contact</a></li>
+                    <li><a href="#resumeContent">Resume</a></li>
+                </ul>
+            </nav>
         </div>
-        <div id="articles">
-            <div id="aboutContent">
-                <h1>ABOUT</h1>
-                <div id="v1"></div>
-                <h3>Full stack developer in the process of learning the tools to put my passion for problem solving and creating to work.</h3>
-                <p>I've always wanted a job that's meaningful to me. For this reason I'm currently working towards completing the University of Wisconsin Full Stack Development Boot Camp. Prior to this, I worked at a grocery store for several years and completed an associates degree from Madison Area Technical College.</p>
-                <p>I'm extremely excited to complete the boot camp and use the skills I gained to bring ideas to life in a web/software developer position while continuing to learn on the job. I'm passionate about building solutions, this is why I want to make an impact at a great company as a web/software developer.</p>
+        <main>
+            <div id="missionStatement">
+                <h1>I want to turn <span id="span1">ideas</span> into <span id="span2">reality.</span></h1>
             </div>
-            <div id="projectsContent">
-                <h1>PROJECTS</h1>
-                <p>Slide show?</p>
-                <p>Coming soon...</p>
+            <div id="articles">
+                <article id="aboutContent">
+                    <h1>ABOUT</h1>
+                    <div id="v1"></div>
+                    <h3>Full stack developer in the process of learning the tools to put my passion for problem solving and creating to work.</h3>
+                    <p>I've always wanted a job that's meaningful to me. For this reason I'm currently working towards completing the University of Wisconsin Full Stack Development Boot Camp. Prior to this, I worked at a grocery store for several years and completed an associates degree from Madison Area Technical College.</p>
+                    <p>I'm extremely excited to complete the boot camp and use the skills I gained to bring ideas to life in a web/software developer position while continuing to learn on the job. I'm passionate about building solutions, this is why I want to make an impact at a great company as a web/software developer.</p>
+                </article>
+                <article id="projectsContent">
+                    <h1>PROJECTS</h1>
+                    <p>Slide show?</p>
+                    <p>Coming soon...</p>
+                </article>
+                <article id="skillsContent">
+                    <h1>SKILLS</h1>
+                    <p>Coming soon...</p>
+                </article>
+                <article id="educationContent">
+                    <h1>EDUCATION</h1>
+                    <div id="matc">
+                        <h3>MADISON AREA TECHNICAL COLLEGE</h3>
+                        <P>Madison, WI</P>
+                        <ul>
+                            <li>AS in Web Software Development</li>
+                            <li>GPA: 3.917</li>
+                        </ul>
+                    </div>
+                </article>
+                <article id="contactContent">
+                    <h1>CONTACT</h1>
+                    <section id="email">
+                        <a href="mailto:derek.slauson5@gmail.com">
+                            <i class="far fa-envelope icon"></i>
+                        </a>
+                        <a href="mailto:derek.slauson5@gmail.com">
+                            <span class="iconText">derek.slauson5@gmail.com</span>
+                        </a>
+                    </section>
+                    <section id="github">
+                        <a href="https://github.com/MarsVolta4366" target="_blank">
+                            <i class="fab fa-github icon"></i>
+                        </a>
+                        <a href="https://github.com/MarsVolta4366" target="_blank">
+                            <span class="iconText">github.com/MarsVolta4366</span>
+                        </a>
+                    </section>
+                    <section id="linkedin">
+                        <a href="https://www.linkedin.com/in/derek-slauson-02a8b317a" target="_blank">
+                            <i class="fab fa-linkedin icon"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/derek-slauson-02a8b317a" target="_blank">
+                            <span class="iconText">https://www.linkedin.com/in/derek-slauson-02a8b317a</span>
+                        </a>
+                    </section>
+                </article>
+                <article id="resumeContent">
+                    <h1>RESUME</h1>
+                    <section id="linkedin">
+                        <a href="assets/docs/Resume.pdf" target="_blank">
+                            <i class="fas fa-file icon"></i></a>
+                        <a href="assets/docs/Resume.pdf" target="_blank">
+                            <span class="iconText">Resume.pdf</span>
+                        </a>
+                    </section>
+                </article>
             </div>
-            <div id="skillsContent">
-                <h1>SKILLS</h1>
-                <p>Coming soon...</p>
-            </div>
-            <div id="educationContent">
-                <h1>EDUCATION</h1>
-                <div id="matc">
-                    <h3>MADISON AREA TECHNICAL COLLEGE</h3>
-                    <P>Madison, WI</P>
-                    <ul>
-                        <li>AS in Web Software Development</li>
-                        <li>GPA: 3.917</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="contactContent">
-                <h1>CONTACT</h1>
-                <div id="email">
-                    <a href="#"><img src="assets/images/EmailIcon.png" alt="Email Icon"></a>
-                    <p>derek.slauson5@gmail.com</p>
-                </div>
-            </div>
-            <div id="resumeContent">
-                <h1>RESUME</h1>
-                <p>Coming soon...</p>
-            </div>
-        </div>
-    </div>
-</body>
+        </main>
+    </body>
 </html>
+
