@@ -3,23 +3,21 @@ html, body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    font-family: 'Garamond', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 #sidebar {
     height: 100%;
     width: 250px;
     position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0px;
-    overflow-x: hidden;
-    transition: 0.5s;
     padding-top: 30px;
     padding-left: 10px;
     background-color: #111;
-    color: lightgray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 5px 0px 15px black;
+    color: #d3d3d3;
+    font-family: 'Heebo', Arial, sans-serif;
+    font-weight: 700;
+    box-shadow: 5px 0px 10px black;
 }
 
 #sidebar ul {
@@ -110,6 +108,17 @@ main {
     margin-left: 0px;
 }
 
+span {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skillsIcon {
+    font-size: 70px;
+    color: #26013B;
+}
+
 #matc {
     background-color: white;
     width: 600px;
@@ -145,10 +154,8 @@ main {
 .iconText{
     text-decoration: none;
     color: darkslategray;
-    padding-bottom: 5px;
     border-bottom: 3px solid gainsboro;
     transition: border-color .25s linear;
-
 }
 
 .iconText:hover {
@@ -156,7 +163,7 @@ main {
 }
 
 .icon, .iconText {
-    line-height: 50px;
+    line-height: 30px;
     font-size: 20px;
     margin: 0 10px 0 0;
 }
