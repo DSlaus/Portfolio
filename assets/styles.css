@@ -114,24 +114,28 @@ main {
     width: 95%;
 }
 
-/* Continue reviewing CSS here */
-
 #v1 {
-    border-left: 20px solid darkslategrey;
+    border-left: 20px solid #2f4f4f;
     height: 100px;
     position: absolute;
     margin-left: 0px;
 }
 
-span {
+/* Continue reviewing CSS here, maybe add some comments*/
+
+#skillsContent > span {
     display: inline-block;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 10px 20px 20px;
 }
 
 .skillsIcon {
     font-size: 70px;
     color: #26013B;
+}
+
+#skillsContent > span > p {
+    margin: 0;
 }
 
 #matc {
@@ -168,7 +172,8 @@ span {
 
 .iconText{
     text-decoration: none;
-    color: darkslategray;
+    color: #2f4f4f;
+    padding-bottom: 5px;
     border-bottom: 3px solid gainsboro;
     transition: border-color .25s linear;
 }
