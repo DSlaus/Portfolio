@@ -3,65 +3,7 @@ html, body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
-    font-family: 'Garamond', 'Arial Narrow', Arial, sans-serif;
-}
-
-/* Sidebar */
-
-#sidebar {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    padding-top: 30px;
-    padding-left: 10px;
-    background-color: #111;
-    color: #d3d3d3;
-    font-family: 'Heebo', Arial, sans-serif;
-    font-weight: 700;
-    box-shadow: 5px 0px 10px black;
-}
-
-#sidebar > h1 {
-    font-size: 2em;
-}
-
-#sidebar > a {
-    text-decoration: none;
-    color: #d3d3d3;
-}
-
-#sidebar > h2 {
-    font-size: 1.2em;
-}
-
-#sidebar ul {
-    margin: 0;
-    padding: 0;
-}
-
-#sidebar ul li{
-    list-style-type: none;
-    margin: 20px 0 20px 0;
-    transition: background-color .25s linear;
-    transition: border-left .25s linear;
-}
-
-#sidebar ul li:hover {
-    background-color: #8080802d;
-    border-left: 5px solid white;
-}
-
-#sidebar ul li a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 1.5em;
-    color: #d3d3d3;
-    display: block;
-    transition: color .25s linear;
-}
-
-#sidebar a:hover {
-    color: white;
+    /* font-family: 'Garamond', 'Arial Narrow', Arial, sans-serif; */
 }
 
 /* Main */
@@ -70,6 +12,7 @@ main {
     margin: 0;
     padding: 0;
     margin-left: 250px;
+    /* mmargin-left: 250px; FOR OLD SIDEBAR */
     height: 100%;
 }
 
@@ -91,11 +34,14 @@ main {
 
 #span1 {
     text-decoration: underline;
-    text-decoration-color: #f20000;
+    /* text-decoration-color: #52489C; */
+    text-decoration-color: #2941AB;
+
 }
 
 #span2 {
-    background-color: #f20000;
+    background-color: #2941AB;    
+    color: #ffffff;
     padding: .2em;
 }
 
@@ -111,7 +57,8 @@ main {
 }
 
 #articles {
-    background-color:#dcdcdc;
+    /* background-color:#dcdcdc; */
+    background-color: #E5E7E6;
     padding-bottom: 1px;
 }
 
@@ -124,18 +71,46 @@ main {
 }
 
 #articles h3 {
-    color: #2f4f4f;
+    /* color: #52489C; */
+    color: #2941AB;
     font-size: 2.3em;
     margin: 20px 0px 0px 30px;
     font-weight: normal;
     width: 95%;
 }
 
+/* About */
 #v1 {
-    border-left: 20px solid #2f4f4f;
+    /* border-left: 20px solid #2f4f4f;     */
+    border-left: 20px solid #2941AB;    
+    /* border-left: 20px solid #52489C; */
     height: 100px;
     position: absolute;
     margin-left: 0px;
+}
+
+/* Projects */
+#projects {
+    display: flex;
+}
+
+.project {
+    min-height: 400px;
+}
+
+.cardTitle {
+    color: #52489C;
+    /* color: #D81E5B; */
+}
+
+.cardText {
+    font-size: 1em !important;
+    margin: 0 0 10px 0 !important;
+}
+
+.myButton {
+    /* background-color: #D81E5B !important; */
+    background-color: #52489C !important;
 }
 
 /* Skills */
@@ -170,6 +145,10 @@ main {
     color: #171515;
 }
 
+.fa-bootstrap {
+    color: #7C12F9;
+}
+
 /* Education */
 
 #matc {
@@ -178,9 +157,11 @@ main {
     height: 200px;
     margin: 30px;
     padding: 5px;
-    box-shadow: 5px 5px 5px darkgray;
-    border-top: 5px solid darkslategrey;
-    border-left: 5px solid darkslategrey;
+    box-shadow: 5px 5px 5px #B7B5B3;
+    /* border-top: 5px solid #52489C;
+    border-left: 5px solid #52489C; */
+    border-top: 5px solid #2941AB;
+    border-left: 5px solid #2941AB;
 }
 
 #matc h3 {
@@ -206,14 +187,17 @@ main {
 }
 
 .iconText{
-    color: #2f4f4f;
+    /* color: #2f4f4f; */
+    /* color: #52489C; */
+    color: #2941AB;
     padding-bottom: 5px;
     border-bottom: 3px solid #dcdcdc;
     transition: border-color .25s linear;
 }
 
 .iconText:hover {
-    border-bottom: 3px solid #2f4f4f;
+    /* border-bottom: 3px solid #52489C; */
+    border-bottom: 3px solid #2941AB;
 }
 
 .icon, .iconText {
@@ -225,15 +209,65 @@ main {
 .icon {
     vertical-align: middle;
     font-size: 50px;
-    color: #493327;
+    color: #141301;
 }
 
 /* Resume */
-
 #resumeContent section {
     margin: 20px;
 }
 
 #resumeContent section a {
     text-decoration: none;
+}
+
+/* Boostrap sidebar */
+#sidebarB {
+    position: fixed;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    /* background: #111; */
+    background-color: black;
+    color: #d3d3d3;
+}
+
+#sidebarB .sidebar-header {
+    padding: 20px;
+}
+
+.sidebar-header h3 {
+    color: #ffffff;
+}
+
+.sidebar-header p {
+    color: #FFFFFF;
+}
+
+#sidebarB ul.components {
+    /* border-bottom: 1px solid #52489C; */
+    border-bottom: 1px solid #2941AB;
+}
+
+#sidebarB ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebarB a {
+    text-decoration: none;
+    color: #B7B5B3;
+}
+
+#sidebarB ul li a{
+    margin: 20px 0 20px 0;
+    border-left: 0px solid white;
+    transition: .25s linear;
+}
+
+#sidebarB li a:hover {
+    border-left: 5px solid white;
+    background-color: #8080802d;
+    color: white;
 }

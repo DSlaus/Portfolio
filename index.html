@@ -4,8 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/assets/styles.css">
         <title>&lt;/&gt; Derek Slauson | Full-Stack Developer</title>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+            crossorigin="anonymous">
 
         <!-- Font Awesome -->
         <link rel="stylesheet" 
@@ -17,23 +22,33 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    
+        <!-- My CSS -->
+        <link rel="stylesheet" href="/assets/styles.css">
+        <!-- <link rel="stylesheet" href="assets/styles.scss"> -->
     </head>
+
+    <!-- Next, make page responsive -->
+
     <body>
-        <div id="sidebar">
-            <a href="#top"><h1>Derek Slauson</h1></a>
-            <h2>Full Stack Developer</h2>
-            <hr>
-            <nav>
-                <ul>
-                    <li><a href="#aboutContent">About</a></li>
-                    <li><a href="#projectsContent">Projects</a></li>
-                    <li><a href="#skillsContent">Skills</a></li>
-                    <li><a href="#educationContent">Education</a></li>
-                    <li><a href="#contactContent">Contact</a></li>
-                    <li><a href="#resumeContent">Resume</a></li>
-                </ul>
-            </nav>
-        </div>
+
+        <!-- Bootstrap sidebar -->
+        <nav id="sidebarB">
+            <div class="sidebar-header">
+               <a href="#top"><h3>Derek Slauson</h3></a> 
+                <p>Full Stack Developer</p>
+            </div>
+    
+            <ul class="list-unstyled components">
+                <li><a href="#aboutContent">About</a></li>
+                <li><a href="#projectsContent">Projects</a></li>
+                <li><a href="#skillsContent">Skills</a></li>
+                <li><a href="#educationContent">Education</a></li>
+                <li><a href="#contactContent">Contact</a></li>
+                <li><a href="#resumeContent">Resume</a></li>
+            </ul>
+        </nav>
+
         <main>
             <div id="missionStatement">
                 <h2>I want to turn <span id="span1">ideas</span> into <span id="span2">reality.</span></h2>
@@ -48,8 +63,39 @@
                 </article>
                 <article id="projectsContent">
                     <h2>PROJECTS</h2>
-                    <p>Slide show?</p>
-                    <p>Coming soon...</p>
+                    <div id="projects">
+
+                        <!-- Bootstrap card -->
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/HackerNewsClone.png" alt="Screenshot of the Hacker News website">
+                            <div class="card-body">
+                              <h5 class="card-title cardTitle">Hacker News Clone</h5>
+                              <p class="card-text cardText">A clone of the Hacker News website.</p>
+                              <a href="https://marsvolta4366.github.io/HackerNewsClone/" 
+                                class="btn btn-primary myButton"
+                                target="_blank">Check It Out</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/SpotifyClone.png" alt="Screenshot of Spotify">
+                            <div class="card-body">
+                              <h5 class="card-title cardTitle">Spotify Clone</h5>
+                              <p class="card-text cardText">A clone of the Spotify website</p>
+                              <a href="#" class="btn btn-primary myButton">Check It Out</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://placekitten.com/230/170" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title cardTitle">Interval Trainer</h5>
+                              <p class="card-text cardText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, quas?</p>
+                              <a href="#" class="btn btn-primary myButton">Check It Out</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </article>
                 <article id="skillsContent">
                     <h2>SKILLS</h2>
@@ -70,6 +116,10 @@
                     <span>
                         <i class="fab fa-github skillsIcon"></i>
                         <p>Github</p>
+                    </span>
+                    <span>
+                        <i class="fab fa-bootstrap skillsIcon"></i>
+                        <p>Bootstrap</p>
                     </span>
                 </article>
                 <article id="educationContent">
