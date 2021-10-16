@@ -32,23 +32,29 @@
 
     <body>
 
-        <!-- Bootstrap sidebar -->
-        <nav id="sidebarB">
+        <!-- Nav -->
+        <nav id="mainNav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
             <div class="sidebar-header">
-               <a href="#top"><h3>Derek Slauson</h3></a> 
+                <a href="#top"><h3>Derek Slauson</h3></a> 
                 <p>Full Stack Developer</p>
-            </div>
-    
-            <ul class="list-unstyled components">
-                <li><a href="#aboutContent">About</a></li>
-                <li><a href="#projectsContent">Projects</a></li>
-                <li><a href="#skillsContent">Skills</a></li>
-                <li><a href="#educationContent">Education</a></li>
-                <li><a href="#contactContent">Contact</a></li>
-                <li><a href="#resumeContent">Resume</a></li>
+             </div>
+            <ul>
+                <label for="check" class="checkbtn" id="closeBtn">
+                    <i class="fas fa-times"></i>
+                </label>
+                <li><a class="navLink" href="#aboutContent">About</a></li>
+                <li><a class="navLink" href="#projectsContent">Projects</a></li>
+                <li><a class="navLink" href="#skillsContent">Skills</a></li>
+                <li><a class="navLink" href="#educationContent">Education</a></li>
+                <li><a class="navLink" href="#contactContent">Contact</a></li>
+                <li><a class="navLink" href="#resumeContent">Resume</a></li>
             </ul>
         </nav>
-
+        
         <main>
             <div id="missionStatement">
                 <h2>I want to turn <span id="span1">ideas</span> into <span id="span2">reality.</span></h2>
@@ -134,11 +140,11 @@
                         </a>
                     </section>
                     <section id="linkedin">
-                        <a href="https://www.linkedin.com/in/derek-slauson-02a8b317a" target="_blank">
+                        <a href="https://www.linkedin.com/in/derekslauson" target="_blank">
                             <i class="fab fa-linkedin icon"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/derek-slauson-02a8b317a" target="_blank">
-                            <span class="iconText">https://www.linkedin.com/in/derek-slauson-02a8b317a</span>
+                        <a href="https://www.linkedin.com/in/derekslauson" target="_blank">
+                            <span class="iconText">https://www.linkedin.com/in/derekslauson</span>
                         </a>
                     </section>
                 </article>
@@ -154,6 +160,14 @@
                 </article>
             </div>
         </main>
+        <!-- Bootstrap js -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="assets/index.js"></script>
     </body>
 </html>
 
