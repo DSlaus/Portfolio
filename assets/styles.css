@@ -1,3 +1,11 @@
+:root {
+    --almostBlack: #111;
+    /* --themeColor: #2941AB; */
+    --themeColor: #044c6d;
+
+    --myRed: #a50f0f;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -28,11 +36,11 @@ main {
 
 #span1 {
     text-decoration: underline;
-    text-decoration-color: #a50f0f;
+    text-decoration-color: var(--myRed);
 }
 
 #span2 {
-    background-color: #a50f0f;
+    background-color: var(--myRed);
     color: #ffffff;
     padding: .2em;
 }
@@ -61,7 +69,7 @@ main {
 }
 
 #articles h3 {
-    color: #2941AB;
+    color: var(--themeColor);
     /* color: rgb(33, 16, 80); */
     font-size: 2.3em;
     margin: 20px 0px 0px 30px;
@@ -71,7 +79,7 @@ main {
 
 /* About */
 #v1 {
-    border-left: 20px solid #2941AB;    
+    border-left: 20px solid var(--themeColor);    
     /* border-left: 20px solid rgb(33, 16, 80);     */
     height: 100px;
     position: absolute;
@@ -89,7 +97,7 @@ main {
 }
 
 .cardTitle {
-    color: #2941AB;
+    color: var(--themeColor);
 }
 
 .cardText {
@@ -98,7 +106,7 @@ main {
 }
 
 .myButton {
-    background-color: #2941AB !important;
+    background-color: var(--themeColor) !important;
 }
 
 /* Skills */
@@ -145,8 +153,8 @@ main {
     padding: 5px;
     box-shadow: 5px 5px 5px #B7B5B3;
     border-radius: 5px;
-    border-top: 5px solid #2941AB;
-    border-left: 5px solid #2941AB;
+    border-top: 5px solid var(--themeColor);
+    border-left: 5px solid var(--themeColor);
 }
 
 #matc h3 {
@@ -171,14 +179,14 @@ main {
 }
 
 .iconText{
-    color: #2941AB;
+    color: var(--themeColor);
     padding-bottom: 5px;
     border-bottom: 3px solid #dcdcdc;
     transition: border-color .25s linear;
 }
 
 .iconText:hover {
-    border-bottom: 3px solid #2941AB;
+    border-bottom: 3px solid var(--themeColor);
 }
 
 .icon, .iconText {
@@ -207,7 +215,7 @@ main {
     position: fixed;
     /* background: #5e1a1a; */
     /* background-color: #211050; */
-    background: #111;
+    background: var(--almostBlack);
     /* background-color: #21253b; */
     color: #d3d3d3;
     z-index: 1;
@@ -241,7 +249,7 @@ main {
 }
 
 #mainNav ul {
-    border-bottom: 1px solid #2941AB;
+    border-bottom: 1px solid var(--themeColor);
 }
 
 #mainNav ul li a {
@@ -273,7 +281,7 @@ main {
 }
 
 #closeBtn:hover {
-    color: #A50F0F;
+    color: var(--myRed);
 }
 
 @media (min-width: 950px) {
@@ -314,14 +322,14 @@ main {
         position: fixed;
         width: 250px;
         height: 100vh;
-        background-color: #111;
+        background-color: var(--almostBlack);
         top: 0px;
         left: -100%;
         text-align: center;
         transition: all .5s;
     }
     #mainNav li:last-child {
-        border-bottom: 1px solid #2941AB;
+        border-bottom: 1px solid var(--themeColor);
 
     }
     #mainNav ul li a {
