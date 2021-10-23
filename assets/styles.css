@@ -207,8 +207,8 @@ main {
     position: fixed;
     /* background: #5e1a1a; */
     /* background-color: #211050; */
-    /* background: #111; */
-    background-color: #21253b;
+    background: #111;
+    /* background-color: #21253b; */
     color: #d3d3d3;
     z-index: 1;
 }
@@ -297,10 +297,8 @@ main {
         width: 100%;
         height: 100px;
         text-align: center;
-        background: #21253b;
-        /* background-color: rgb(33, 37, 59); */
+        background-color: #21253b;
         box-shadow: 0px 5px 5px black;
-
     }
     .sidebar-header {
         display: inline-block;
