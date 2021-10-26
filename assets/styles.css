@@ -1,9 +1,11 @@
 :root {
     --almostBlack: #111;
     /* --themeColor: #2941AB; */
-    --themeColor: #044c6d;
-
+    /* --themeColor: #044c6d; */
+    --themeColor: #008c9e;
     --myRed: #a50f0f;
+    /* --backgroundLight: #E5E7E6; */
+    --backgroundDark: #222733;
 }
 
 html, body {
@@ -23,32 +25,47 @@ main {
 
 /* Mission statement */
 #missionStatement {
-    background-color: #E5E7E6;
+    color: white;
+    background-color: var(--backgroundDark);
+    /* background-image: url(images/PictureOfMe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 1000px;
+    background-position-y: -300px; */
+}
+
+#missionStatement img {
+    width: 150px;
+    height: auto;
+    display: inline-block;
 }
 
 #missionStatement h2 {
     font-size: 2em;
     font-family: 'Heebo', Arial, sans-serif;
     font-weight: 700;
-    padding: 70px;
+    padding: 30px;
     margin: 0;
+    display: inline-block;
 }
 
 #span1 {
     text-decoration: underline;
-    text-decoration-color: var(--myRed);
+    text-decoration-color: var(--themeColor);
 }
 
 #span2 {
-    background-color: var(--myRed);
-    color: #ffffff;
+    background-color: var(--themeColor);
+    color: #FFFFFF;
     padding: .2em;
 }
 
 /* Articles */
 #articles h2 {
     margin: 0px;
-    background-color: black;
+    background-color: var(--almostBlack);
+    border-bottom: 1px solid var(--themeColor);
     color: #d3d3d3;
     font-weight: normal;
     padding: 20px;
@@ -56,8 +73,9 @@ main {
 }
 
 #articles {
-    background-color: #E5E7E6;
+    background-color: var(--backgroundDark);
     padding-bottom: 1px;
+    color: #DBE8D4;
 }
 
 #articles p {
@@ -93,7 +111,8 @@ main {
 
 .card {
     margin: 20px;
-    box-shadow: 5px 5px 5px #B7B5B3;
+    /* box-shadow: 5px 5px 5px #B7B5B3; */
+    background-color: var(--almostBlack);
 }
 
 .cardTitle {
@@ -146,12 +165,12 @@ main {
 
 /* Education */
 #matc {
-    background-color: white;
+    background-color: var(--almostBlack);
     width: 600px;
     height: 200px;
     margin: 30px;
     padding: 5px;
-    box-shadow: 5px 5px 5px #B7B5B3;
+    /* box-shadow: 5px 5px 5px #B7B5B3; */
     border-radius: 5px;
     border-top: 5px solid var(--themeColor);
     border-left: 5px solid var(--themeColor);
@@ -198,7 +217,7 @@ main {
 .icon {
     vertical-align: middle;
     font-size: 50px;
-    color: #141301;
+    color: var(--themeColor);
 }
 
 /* Resume */
@@ -289,7 +308,7 @@ main {
         min-width: 250px;
         max-width: 250px;
         min-height: 100vh;
-        box-shadow: 5px 0px 5px black;
+        /* box-shadow: 5px 0px 5px black; */
     }
 }
 
@@ -305,8 +324,8 @@ main {
         width: 100%;
         height: 100px;
         text-align: center;
-        background-color: #21253b;
-        box-shadow: 0px 5px 5px black;
+        background-color: #525E65;
+        /* box-shadow: 0px 5px 5px black; */
     }
     .sidebar-header {
         display: inline-block;
