@@ -25,10 +25,12 @@
     
         <!-- My CSS -->
         <link rel="stylesheet" href="assets/styles.css">
-        <!-- <link rel="stylesheet" href="assets/styles.scss"> -->
     </head>
 
-    <!-- Next, make page responsive -->
+    <!-- TWO PROBLEMS,
+        Fix skills so each skill takes up same amount of space
+        Fix how hamburger menu covers name when screen gets too small
+    -->
 
     <body>
 
@@ -63,8 +65,9 @@
             <div id="articles">
                 <article id="aboutContent">
                     <h2>ABOUT</h2>
-                    <div id="v1"></div>
-                    <h3>Full stack developer in the process of learning the tools to put my passion for problem solving and creating to work.</h3>
+                    <div id="v1">
+                        <h3>Full stack developer in the process of learning the tools to put my passion for problem solving and creating to work.</h3>
+                    </div>
                     <p>I've always wanted a job that's meaningful to me. For this reason I'm currently working towards completing the UW-Madison Full-Stack Development Bootcamp. Prior to this, I worked at a grocery store for several years and completed an associates degree from Madison Area Technical College.</p>
                     <p>I'm extremely excited to complete the bootcamp and use the skills I gained to bring ideas to life in a web/software developer position while continuing to learn on the job. I'm passionate about building solutions, this is why I want to make an impact at a great company as a web/software developer.</p>
                 </article>
@@ -73,7 +76,7 @@
                     <div id="projects">
 
                         <!-- Bootstrap card -->
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <img class="card-img-top" src="assets/images/HackerNewsClone.png" alt="Screenshot of the Hacker News website">
                             <div class="card-body">
                               <h5 class="card-title cardTitle">Hacker News Clone</h5>
@@ -83,8 +86,8 @@
                                 target="_blank">Check It Out</a>
                             </div>
                         </div>
-
-                        <div class="card" style="width: 18rem;">
+<!-- style="width: 20rem;" -->
+                        <div class="card">
                             <img class="card-img-top" src="assets/images/RomanPicture.png" alt="Screenshot of a roman numerals converter site">
                             <div class="card-body">
                               <h5 class="card-title cardTitle">Roman Numerals Converter</h5>
@@ -99,28 +102,30 @@
                 </article>
                 <article id="skillsContent">
                     <h2>SKILLS</h2>
-                    <span>
-                        <i class="fab fa-html5 skillsIcon"></i>
-                        <p>HTML5</p>
-                    </span>
+                    <div id="skillsDiv">
+                        <span>
+                            <i class="fab fa-html5 skillsIcon"></i>
+                            <p>HTML5</p>
+                        </span>
 
-                    <span>
-                        <i class="fab fa-css3-alt skillsIcon"></i>
-                        <p>CSS3</p>
-                    </span>
+                        <span>
+                            <i class="fab fa-css3-alt skillsIcon"></i>
+                            <p>CSS3</p>
+                        </span>
 
-                    <span>
-                        <i class="fab fa-js-square skillsIcon"></i>
-                        <p>Javascript</p>
-                    </span>
-                    <span>
-                        <i class="fab fa-github skillsIcon"></i>
-                        <p>Github</p>
-                    </span>
-                    <span>
-                        <i class="fab fa-bootstrap skillsIcon"></i>
-                        <p>Bootstrap</p>
-                    </span>
+                        <span>
+                            <i class="fab fa-js-square skillsIcon"></i>
+                            <p>Javascript</p>
+                        </span>
+                        <span>
+                            <i class="fab fa-github skillsIcon"></i>
+                            <p>Github</p>
+                        </span>
+                        <span>
+                            <i class="fab fa-bootstrap skillsIcon"></i>
+                            <p>Bootstrap</p>
+                        </span>
+                    </div>
                 </article>
                 <article id="educationContent">
                     <h2>EDUCATION</h2>
